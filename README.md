@@ -18,6 +18,12 @@ This is a Node.js project that implements a RESTful API for a news aggregator ap
 - Search for news articles based on keywords.
 - Periodic background updates for cached news articles.
 
+## Security
+
+This project utilizes the Zod library for input validation and sanitization to improve security by preventing malicious or unexpected input from reaching the application's business logic. Zod schemas are defined to enforce strict validation rules for user input, such as email format, password complexity, and news preference categories. Any invalid or malformed input is rejected, and detailed error messages are provided for easier debugging.
+
+By incorporating Zod, this project aims to mitigate security vulnerabilities like SQL injection, cross-site scripting (XSS), and other forms of malicious input.
+
 ## Prerequisites
 
 - NPM (Node Package Manager)
